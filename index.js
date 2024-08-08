@@ -60,6 +60,7 @@ import functionPrototypeName from './codemods/function.prototype.name/index.js';
 import functionsHaveNames from './codemods/functions-have-names/index.js';
 import getSymbolDescription from './codemods/get-symbol-description/index.js';
 import global from './codemods/global/index.js';
+import globalthis from './codemods/globalthis/index.js';
 import gopd from './codemods/gopd/index.js';
 import has from './codemods/has/index.js';
 import hasOwnProp from './codemods/has-own-prop/index.js';
@@ -109,6 +110,7 @@ import numberPrototypeToexponential from './codemods/number.prototype.toexponent
 import objectAssign from './codemods/object-assign/index.js';
 import objectIs from './codemods/object-is/index.js';
 import objectKeys from './codemods/object-keys/index.js';
+import objectAssign2 from './codemods/object.assign/index.js';
 import objectDefineproperties from './codemods/object.defineproperties/index.js';
 import objectEntries from './codemods/object.entries/index.js';
 import objectFromentries from './codemods/object.fromentries/index.js';
@@ -224,6 +226,7 @@ export const codemods = {
   "functions-have-names": functionsHaveNames,
   "get-symbol-description": getSymbolDescription,
   "global": global,
+  "globalthis": globalthis,
   "gopd": gopd,
   "has": has,
   "has-own-prop": hasOwnProp,
@@ -273,6 +276,7 @@ export const codemods = {
   "object-assign": objectAssign,
   "object-is": objectIs,
   "object-keys": objectKeys,
+  "object.assign": objectAssign2,
   "object.defineproperties": objectDefineproperties,
   "object.entries": objectEntries,
   "object.fromentries": objectFromentries,
