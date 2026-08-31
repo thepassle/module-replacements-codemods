@@ -5,8 +5,8 @@ import {
 import { codemods } from '../index.js';
 
 const all = [
-	...nativeReplacements.moduleReplacements,
-	...microUtilsReplacements.moduleReplacements,
+	...Object.values(nativeReplacements.mappings),
+	...Object.values(microUtilsReplacements.mappings),
 ];
 
 /**
