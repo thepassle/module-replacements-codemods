@@ -10,6 +10,10 @@ import fs from 'node:fs';
 
 const name = process.argv[2];
 
+if (!name || !/^[a-zA-Z0-9-]+$/.test(name)) {
+	throw new Error('Invalid name: only alphanumeric characters and hyphens are allowed');
+}
+
 fs.mkdirSync(`./test/fixtures/${name}/case-1`, { recursive: true });
 fs.writeFileSync(
 	`./test/fixtures/${name}/case-1/before.js`,
